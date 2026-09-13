@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <a href="index.html">
+        <img src="./images/back arrow.png" alt="Back" width="65px">
+    </a>
+
+    <center>
+
+        <div>
+            <img src="./images/smit logo.png" alt="SMIT Logo" width="200px">
+        </div>
+
+
+
+        <form action="">
+
+            <h2>STUDENT REGISTRATION FORM</h2>
+
+
+            <table cellpadding="10">
+
+                <tr>
+                    <td>FIRST NAME</td>
+
+                    <td>
+                        <input type="text" name="FirstName" maxlength="30" placeholder="Enter the First Name">
+                        (max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>LAST NAME</td>
+
+                    <td>
+                        <input type="text" name="LastName" maxlength="30" placeholder="Enter the Last Name">
+                        (max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>DATE OF BIRTH</td>
+
+                    <td>
+                        <input type="date" name="DateOfBirth">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>EMAIL ID</td>
+
+                    <td>
+                        <input type="email" name="EmailID" placeholder="Enter the Email Address">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>MOBILE NUMBER</td>
+
+                    <td>
+                        <input type="text" name="MobileNumber" maxlength="10" placeholder="Enter the Mobile Number">
+                        (10 Digits Numbers)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>GENDER</td>
+
+                    <td>
+                        Male
+                        <input type="radio" name="Gender" value="Male">
+
+                        Female
+                        <input type="radio" name="Gender" value="Female">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        ADDRESS
+                        <br><br><br><br><br>
+                    </td>
+
+                    <td>
+                        <textarea name="Address" rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CITY</td>
+
+                    <td>
+                        <input type="text" name="City" maxlength="30" placeholder="Enter the City Name">
+                        (max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PIN CODE</td>
+
+                    <td>
+                        <input type="text" name="PinCode" maxlength="6" placeholder="Enter the Pin Code">
+                        (6 Digits Numbers)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>STATE</td>
+
+                    <td>
+                        <input type="text" name="State" maxlength="30" placeholder="Enter the State">
+                        (max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>COUNTRY</td>
+
+                    <td>
+                        <input type="text" name="Country" placeholder="Enter the Country Name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        HOBBIES
+                        <br><br><br>
+                    </td>
+
+                    <td>
+
+                        Drawing
+                        <input type="checkbox" name="HobbyDrawing" value="Drawing">
+
+                        Singing
+                        <input type="checkbox" name="HobbySinging" value="Singing">
+
+                        Dancing
+                        <input type="checkbox" name="HobbyDancing" value="Dancing">
+
+                        Sketching
+                        <input type="checkbox" name="HobbySketching" value="Sketching">
+
+                        <br>
+
+                        Others
+                        <input type="checkbox" name="HobbyOther" value="Other">
+
+                        <input type="text" name="OtherHobby">
+
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        QUALIFICATION
+                        <br><br><br><br><br><br><br>
+                    </td>
+
+                    <td>
+
+                        <table>
+
+
+                            <tr>
+                                <td><b>Sl.No.</b></td>
+                                <td><b>Examination</b></td>
+                                <td align="center"><b>Board</b></td>
+                                <td align="center"><b>Percentage</b></td>
+                                <td align="center"><b>Year of passing</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+
+                                <td>Class X</td>
+
+                                <td>
+                                    <input type="text" name="Board10">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="Percentage10">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="Passing10">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+
+                                <td>Class XII</td>
+
+                                <td>
+                                    <input type="text" name="Board12">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="Percentage12">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="Passing12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+
+                                <td>Graduation</td>
+
+                                <td>
+                                    <input type="text" name="GraduationBoard">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="GraduationPercentage">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="GraduationPassing">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+
+                                <td>Masters</td>
+
+                                <td>
+                                    <input type="text" name="MastersBoard">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="MastersPercentage">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="MastersPassing">
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+
+                                <td align="center">
+                                    (10 char max)
+                                </td>
+
+                                <td align="center">
+                                    upto 2 decimal
+                                </td>
+
+                                <td></td>
+                            </tr>
+
+                        </table>
+
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        COURSES<br>
+                        APPLIED FOR
+                    </td>
+
+                    <td>
+
+                        <select name="courses">
+
+                            <option value="" selected>
+                                Select any course
+                            </option>
+
+                            <option value="BCA">
+                                BCA
+                            </option>
+
+                            <option value="B.A">
+                                B.A
+                            </option>
+
+                            <option value="B.Sc">
+                                B.Sc
+                            </option>
+
+                            <option value="B.Com">
+                                B.Com
+                            </option>
+
+                        </select>
+
+                    </td>
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Upload you pic
+                        <br>
+                        (only .png,.jpg,.jpeg formats allow)
+                    </td>
+
+                    <td>
+
+                        <input type="file" name="Picture" accept=".png,.jpg,.jpeg">
+
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td colspan="2" align="center">
+
+                        <input type="submit" value="Submit">
+
+                        <input type="reset" value="Reset">
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+
+    </center>
+
+</body>
+
+</html>
