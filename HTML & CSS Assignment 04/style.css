@@ -3,33 +3,56 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 5vw, 70px);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    margin-left: 100px;
+    align-items: center;
+    width: 100%;
+    height: 50px;
     margin-top: 25px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ---------- HERO ---------- */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .left {
-    position: absolute;
-    top: 140px;
-    left: 70px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
-    /* background: #000; */
-    height: 300px;
-    width: 800px;
+    width: 100%;
 }
 
 h3 {
@@ -38,9 +61,296 @@ h3 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    line-height: 1.1;
 }
 
 .contact-btn {
+    padding: 30px;
+    width: 200px;
+    max-width: 100%;
+    background: #000;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+.companies {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo3 {
+    height: 25px;
+    margin-top: 15px;
+}
+
+/* ---------- ABOUT ---------- */
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.first , .second , .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.pink {
+    background-color: #f3afa8;
+    height: 200px;
+    width: 200px;
+    border-radius: 50% 50% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    height: 100px;
+}
+
+.orange {
+    background-color: #ff6250;
+    height: 200px;
+    width: 200px;
+    border-radius: 0 100% 0 0;
+    display: flex;
+    justify-content: end;
+}
+
+.green {
+    background-color: #009379;
+    height: 200px;
+    width: 200px;
+    border-radius: 0 50% 0 50%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+/* ---------- WORK ---------- */
+.work-section {
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.testimonial-box {
+    min-height: 230px;
+    width: 100%;
+    max-width: 340px;
+    padding: 20px 10px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    text-align: start;
+}
+
+.testimonial-description {
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.testimonial-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.text-content {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-heading {
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #2d2d2d;
+}
+
+.contact-para {
+    color: #2d2d2d;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+
+.contact-icons {
+    display: flex;
+}
+
+.contact-icons img {
+    height: 50px;
+    width: auto;
+}
+
+.contact-form {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+input {
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    background-color: #f3f3f3;
+    color: #000;
     padding-left: 20px;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+.submit-btn {
+    padding: 30px;
+    width: 200px;
+    max-width: 100%;
+    background: #000;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .about-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-content,
+    .contact-form {
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 15px;
+    }
+
+    .about-section,
+    .projects,
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .companies {
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .left br,
+    .about-para br,
+    .testimonial-description br,
+    .contact-para br {
+        display: none;
+    }
+
+    .contact-btn,
+    .submit-btn {
+        padding: 20px;
+        width: 100%;
+    }
+
+    input {
+        max-width: 100%;
+    }
 }
